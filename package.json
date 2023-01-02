@@ -1,7 +1,7 @@
 {
-  "name": "redis-lock",
+  "name": "redis-acquire-lock",
   "version": "1.0.0",
-  "description": "Protect your function from concurrent calls",
+  "description": "Protect your functios with distributed locks",
   "main": "index.ts",
   "author": "saranonearth",
   "scripts": {
