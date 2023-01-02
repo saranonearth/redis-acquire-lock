@@ -23,6 +23,6 @@ export function getKey(keyValue: KeyType, args: any[]): string {
   throw new Error("@AcquireLock - invalid key type");
 }
 
-function isPromise(object: any): object is Promise<any> {
+export function isPromise(object: any): object is Promise<any> {
     return object && Promise.resolve(object) === object;
   }

@@ -8,4 +8,9 @@ export class LockManager {
     }
     return false;
   }
+
+  public static async releaseLock(key: string): Promise<boolean> {
+    await RedisLockCache.getCache().sendCommand(["DEL", "lock_" + key]);
+    return true;
+  }
 }
