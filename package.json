@@ -1,0 +1,21 @@
+{
+  "name": "redis-lock",
+  "version": "1.0.0",
+  "description": "Protect your function from concurrent calls",
+  "main": "index.ts",
+  "author": "saranonearth",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "redis": "^4.5.1"
+  }
+}
